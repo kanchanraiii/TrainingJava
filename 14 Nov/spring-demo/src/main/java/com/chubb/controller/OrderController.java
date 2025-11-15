@@ -6,29 +6,25 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.chubb.requests.Order;
+import com.chubb.requests.*;
 import com.chubb.service.OrderService;
 
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
-
-
 @Slf4j
 @RestController
-public class OderController {
-
-    @Autowired
-    OrderService service;
-
-    @GetMapping("/order")
-    public String getOrder() {
-        return "hello";
-    }
-
-    @PostMapping("/order")
-    public Order saveOrder(@Valid @RequestBody Order order) {
-        log.debug("logger added - order received {}", order);
-        service.insertOrder(order);
-        return order;
-    }
+public class OrderController { //receive http request
+	@Autowired
+	OrderService service;
+	@GetMapping("/order") //path
+	String getOrder() {
+		return "hello";
+	}
+	
+	@PostMapping("/order") //path
+	Order1 saveOrder(@RequestBody @Valid Order1 order) {
+		log.debug("logger added");
+		service.insertOrder(order);
+		return order;
+	}
 }
