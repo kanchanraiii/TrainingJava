@@ -8,10 +8,10 @@
 		<version>3.5.7</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.oneToMany</groupId>
-	<artifactId>OneToMany-demo</artifactId>
+	<groupId>com.ManyToMany</groupId>
+	<artifactId>OneToMany-Demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>OneToMany-demo</name>
+	<name>OneToMany-Demo</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
