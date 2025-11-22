@@ -1,0 +1,4 @@
+10:07:58 INFO  [main] logging.loggingDemo - Application started
+10:07:58 WARN  [main] logging.loggingDemo - A warning occurred
+10:07:58 ERROR [main] logging.loggingDemo - An error occurred
+10:07:58 FATAL [main] logging.loggingDemo - Critical failure!
