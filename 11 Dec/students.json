@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Aarav",
+    "age": 21,
+    "dept": "CSE"
+  },
+  {
+    "name": "Riya",
+    "age": 22,
+    "dept": "ECE"
+  },
+  {
+    "name": "Kabir",
+    "age": 20,
+    "dept": "IT"
+  }
+]
