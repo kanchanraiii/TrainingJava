@@ -1,0 +1,129 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4ecfb; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(110, 84, 140, 0.1);
+    text-align: center;
+}
+
+
+h1 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.btn {
+    background-color: #400b6d; 
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s;
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.btn:hover {
+    background-color: #400b6d;
+}
+
+
+.answer-container button {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ddd;
+    margin: 8px 0;
+    text-align: left;
+    padding: 15px;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.answer-container button:hover:not(.correct):not(.incorrect) {
+    background-color: #f0f0f0;
+}
+
+
+.correct {
+    background-color: #8be08b !important; 
+    border-color: #6edb6e !important;
+    color: white !important;
+}
+
+.incorrect {
+    background-color: #f37d7d !important; 
+    border-color: #e66c6c !important;
+    color: white !important;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.progress-bar {
+    height: 8px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+#progress {
+    height: 100%;
+    width: 0%;
+    background-color: #400b6d; 
+    border-radius: 4px;
+    transition: width 0.3s ease-in-out;
+}
+
+
+.final-score {
+    font-size: 3em;
+    font-weight: bold;
+    color: #400b6d;
+    margin: 10px 0 30px;
+}
+
+.next-btn {
+    margin-top: 20px;
+}
